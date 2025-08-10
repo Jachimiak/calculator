@@ -5,14 +5,31 @@
   font-family: "Roboto Mono", monospace;
 }
 
+/* Style of Calculator */
 #calculator {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  max-width: 320px;
+  margin: 10px auto;
   gap: 10px;
   padding: 20px;
   background-color: #f5f5f5;
   border: 1px solid #ccc;
   border-radius: 5px;
+}
+
+/* Style of Output Screen */
+.calculator-output {
+  background-color: rgb(238, 229, 210);
+  margin: 0 20px;
+  text-align: right;
+  padding: 20px;
+}
+
+/* Spacing of buttons within calculator */
+.calculator-keys {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  padding: 20px;
 }
 
 /* Style the calculator buttons */
@@ -24,4 +41,6 @@
   border: 1px solid #ccc;
   border-radius: 3px;
   cursor: pointer;
+  aspect-ratio: 1;
 }
+

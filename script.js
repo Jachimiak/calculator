@@ -18,16 +18,27 @@ function divide(a, b) {
 }
 
 function operate(a, b, operator){
-  if (operator === "+") {
-    return add(a,b);
-  } else if (operator ==="-") {
-    return subtract(a,b);
-  } else if (operator === "*") {
-    return multiply(a,b);
-  } else if (operator === "/") {
-    return divide(a,b);
+  switch (operator) {
+    case "+":
+      return add(a,b);
+    case "-":
+      return subtract(a,b);
+    case "*":
+      return multiply(a,b);
+    case "/":
+      return divide(a,b);
+    default:
+      return null;
   }
 }
+
+let firstNum = '';
+let secondNum = '';
+let operator = '';
+
+
+const keys = document.querySelector(".calculator-keys");
+const display = document.querySelector(".calculator-output");
 
 
 
